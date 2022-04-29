@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Portafolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+	<link rel="stylesheet" type="text/css" href="EstiloGaleria.css">
+
+
+</head>
+
+<body>
+	<header>
+			 
+		<a href="#" class="logo">Works</a>
+		<ul>
+			<li><a href="index.html" class="active">Home</a></li> 
+			<li><a href="trabajos.html">Works</a></li>
+			<li><a href="MiPaginaWeb.html"target="_blank">About me</a></li>
+			<li><a href="contact.html"target="_blank">Contact</a></li>
+		</ul>  
+	</header>
+
+
+	<!--Esto es para hacer el contenedor 1 -->
+<div class="container-fluid bg-1 text">
+    
+  
+  <img src="FondoPagina/stars.png" class="img-responsive" width="auto"height="100"  id="stars">
+  <img src="FondoPagina/moon.png" class="img-responsive" width="auto"height="100" id="moon">
+  <img src="FondoPagina/mountains_behind.png" class="img-responsive" width="auto"height="100" id="mountains_behind">
+  <h2 id="text"><b>Works</b></b></h2>
+
+  <a href="#sec" id="btn">Explore</a>
+
+  <img src="FondoPagina/mountains_front.png" class="img-responsive" width="auto"height="100" id="mountains_front">
+</div>
+
+<div class="sec" id="sec">
+	<h2>Ilustraciones</h2>
+	
+
+
+
+<!--Galeria responsive -->
+<h3>Galeria</h3>
+<br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/Jordan1.jpg">
+      <img src="Imagenes/Jordan1.jpg" alt="Jordan1" width="600" height="400">
+    </a>
+    <div class="desc">Jordan 1</div>
+    <br>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+<h2>Renders</h2>
+	
+<!--Renders -->
+<h3>Galeria</h3>
+<br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/Efecto_LightFog.jpg">
+      <img src="Imagenes/Efecto_LightFog.jpg" alt="LightFog" width="600" height="400">
+    </a>
+    <div class="desc">Iluminación LightFog</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/escena 2.jpg">
+      <img src="Imagenes/escena 2.jpg" alt="Render nave" width="600" height="400">
+    </a>
+    <div class="desc">Render nave espacial</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/Iluminacion_3.jpg">
+      <img src="Imagenes/Iluminacion_3.jpg" alt="Render personaje" width="600" height="400">
+    </a>
+    <div class="desc">Render personaje</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/Museo_Piso gris.jpg">
+      <img src="Imagenes/Museo_Piso gris.jpg" alt="Render museo" width="600" height="400">
+    </a>
+    <div class="desc">Render museo</div>
+  </div>
+  <br>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/Render_Diorama.png">
+      <img src="Imagenes/Render_Diorama.png" alt="Render personaje" width="600" height="400">
+    </a>
+    <div class="desc">Render Diorama</div>
+  </div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+	  <a target="_blank" href="Imagenes/Render_Senku.png">
+		<img src="Imagenes/Render_Senku.png" alt="Senku" width="600" height="400">
+	  </a>
+	  <div class="desc">Render Senku</div>
+	</div>
+  </div>
+
+<!--Dibujos -->
+
+<div class="clearfix"></div>
+<h2>Dibujos</h2>
+<!--Dibujos -->
+<h3>Galeria</h3>
+<br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/trunks.jpg">
+      <img src="Imagenes/trunks.jpg" alt="Trunks" width="600" height="400">
+    </a>
+    <div class="desc">Trunks</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/gogueta.jpg">
+      <img src="Imagenes/gogueta.jpg" alt="Gogueta" width="600" height="400">
+    </a>
+    <div class="desc">Gogueta</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Imagenes/trunks1.jpg">
+      <img src="Imagenes/trunks1.jpg" alt="Trunks SSJ" width="600" height="400">
+    </a>
+    <div class="desc">Trunks SSJ</div>
+  </div>
+</div>
+	
+	<div class="clearfix"></div>
+</div>
+
+	
+</div>
+
+<script>
+	let stars = document.getElementById('stars');
+	let moon= document.getElementById('moon');
+	let mountains_behind = document.getElementById('mountains_behind');
+	let text= document.getElementById('text');
+	let btn= document.getElementById('btn');
+	let mountains_front = document.getElementById('mountains_front');
+	let header =document.querySelector('header');
+
+	/**Funcion para que cuando haga scroll las estrellas se muevan**/
+	window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		stars.style.left = value *0.25 + 'px';
+		moon.style.top = value *1 + 'px';
+		mountains_behind.style.top = value * 0.5 + 'px';
+		mountains_front.style.top = value * 0 + 'px';
+		text.style.marginRight = value *2.5 + 'px'; /**para que el texto se desplace hacia la izquierda**/
+		text.style.marginTop = value *1.5 + 'px'; /**para que el texto baje**/
+		btn.style.marginTop = value *1.5 + 'px'; /**para que el boton baje**/
+		header.style.top = value * 0.5 + 'px'; /**para que el header baje**/
+
+	})
+</script>
+
+
+
+</body>
+</html>
